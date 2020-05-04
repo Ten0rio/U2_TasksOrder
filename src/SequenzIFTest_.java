@@ -22,12 +22,15 @@ class SequenzIFTest_ {
 	@DisplayName("Die Reihenfolgen muss ausführbar sein und den Abhängigkeiten entsprechen")
 	void test() {
 		String[] seq =  {"A" , "B", "C", "D"};
-		String[] seq2 = { "D" , "C", "B" };
+		String[] seq2 = { "D" , "C", "B", "A" };
 
-		// schlaegt feht
+		//schlaegt feht
 		assertEquals(true, t1.isWellSorted(seq));
 		assertEquals(false, t1.isWellSorted(seq2));
 
+		// wird gruen
+		//assertEquals(false, t1.isWellSorted(seq2));
+		//assertEquals(true, t1.isWellSorted(seq));
 
 		
 		
