@@ -25,12 +25,12 @@ class SequenzIFTest_ {
 		String[] seq2 = { "D" , "C", "B", "A" };
 
 		// schlaegt feht
-		//assertEquals(true, t1.isWellSorted(seq));
-		//assertEquals(false, t1.isWellSorted(seq2));
+		assertEquals(true, t1.isWellSorted(seq));
+		assertEquals(false, t1.isWellSorted(seq2));
 
 		// wird gruen
-		assertEquals(false, t1.isWellSorted(seq2));
-		assertEquals(true, t1.isWellSorted(seq));
+		//assertEquals(false, t1.isWellSorted(seq2));
+		//assertEquals(true, t1.isWellSorted(seq));
 
 		
 		

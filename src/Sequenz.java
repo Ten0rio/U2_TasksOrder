@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Sequenz implements SequenzIF {
 
     String[][] sequenz;
@@ -37,4 +39,17 @@ public class Sequenz implements SequenzIF {
         return this.sequenz;
     }
 
+    @Override
+    public String toString() {
+        /*
+        String restr = "";
+        for(int i=0; i<this.sequenz.length; i++){
+            restr += this.sequenz[i][0];
+            restr += this.sequenz[i][1];
+        }
+        return restr;
+
+         */
+        return "nichts";
+    }
 }
