@@ -18,7 +18,7 @@ class SequenzIFTest_ {
 	
 
 	@Test
-	@DisplayName("Die Reihenfolge muss ausführbar sein und den Abhängigkeiten entsprechen")
+	@DisplayName("Die Reihenfolgen muss ausführbar sein und den Abhängigkeiten entsprechen")
 	void test() {
 		String[] seq =  {"A" , "B", "C", "D"};
 		String[] seq2 = { "D" , "C", "B", "A" };
