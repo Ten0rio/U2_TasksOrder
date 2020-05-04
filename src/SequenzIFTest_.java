@@ -18,6 +18,7 @@ class SequenzIFTest_ {
 	
 
 	@Test
+	@DisplayName("Die Reihenfolge muss ausführbar sein und den Abhängigkeiten entsprechen")
 	void test() {
 		String[] seq =  {"A" , "B", "C", "D"};
 		String[] seq2 = { "D" , "C", "B", "A" };
@@ -29,10 +30,10 @@ class SequenzIFTest_ {
 	}
 
 	@Test
-	@DisplayName("jsv")
+	@DisplayName("Die Objekte sollen gleich sein wenn das gespeicherte aktualisiert wird")
     public void setSequence(String[][] x) {
         String [][] test = {{"A","B"},{"A","B"}};
-        t1.setSequence(test)
+        t1.setSequence(test);
         assertEquals(test,t1.getSequence());
     }
 	

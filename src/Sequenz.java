@@ -17,9 +17,10 @@ public class Sequenz implements SequenzIF {
     public void setSequence(String[][] x) {
 
     }
-    
+
     @Override
     public String[][] getSequence() {
         return this.sequenz;
     }
+
 }
