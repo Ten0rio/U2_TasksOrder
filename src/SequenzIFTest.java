@@ -4,5 +4,6 @@ class SequenzIFTest {
 
     @org.junit.jupiter.api.Test
     void isWellSorted() {
+
     }
 }
