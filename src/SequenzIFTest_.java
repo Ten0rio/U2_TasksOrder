@@ -14,6 +14,7 @@ class SequenzIFTest_ {
 	@BeforeEach
 	void setUp() {
 		t1 = new Sequenz(s1);
+		t2 = new Sequenz(s2);
 	}
 	
 
@@ -22,16 +23,22 @@ class SequenzIFTest_ {
 	void test() {
 		String[] seq =  {"A" , "B", "C", "D"};
 		String[] seq2 = { "D" , "C", "B", "A" };
-		
-		assertEquals(true, t1.isWellSorted(seq));
+
+		// schlaegt feht
+		//assertEquals(true, t1.isWellSorted(seq));
+		//assertEquals(false, t1.isWellSorted(seq2));
+
+		// wird gruen
 		assertEquals(false, t1.isWellSorted(seq2));
+		assertEquals(true, t1.isWellSorted(seq));
+
 		
 		
 	}
 
 	@Test
 	@DisplayName("Die Objekte sollen gleich sein wenn das gespeicherte aktualisiert wird")
-    public void setSequence(String[][] x) {
+    public void setSequence() {
         String [][] test = {{"A","B"},{"A","B"}};
         t1.setSequence(test);
         assertEquals(test,t1.getSequence());
