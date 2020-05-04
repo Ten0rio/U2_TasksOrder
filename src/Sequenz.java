@@ -26,14 +26,21 @@ public class Sequenz implements SequenzIF {
                 if (other[i] == temp[t][1]) {
                     temp = this.sequenz.clone();
                     return false;
+                }else if ((other[i] == temp[t][0]) && (temp[t][0] != "deleted")){
+                    temp[t][0] = "deleted";
+                    temp[t][1] = "deleted";
                 }
             }
+            /*
+            Wird durch das obere else if ersetzt
             for (int t = 0; t < temp.length; t++) {
                 if ((other[i] == temp[t][0]) && (temp[t][0] != "deleted")) {
                     temp[t][0] = "deleted";
                     temp[t][1] = "deleted";
                 }
             }
+
+             */
         }
 
         return true;
