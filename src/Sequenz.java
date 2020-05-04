@@ -1,3 +1,5 @@
+import com.sun.jdi.event.StepEvent;
+
 import java.util.Arrays;
 
 public class Sequenz implements SequenzIF {
@@ -10,12 +12,19 @@ public class Sequenz implements SequenzIF {
 
     @Override
     public boolean isWellSorted(String[] other) {
+       // String[][] temp = this.sequenz.clone();
 
-        String[][] temp = this.sequenz.clone();
+        String [][] temp = new String[sequenz.length][2];
+
+        for(int i=0; i<temp.length; i++){
+            temp[i][0]=sequenz[i][0];
+            temp[i][1]=sequenz[i][1];
+        }
 
         for (int i = 0; i < other.length; i++) {
             for (int t = 0; t < temp.length; t++) {
                 if (other[i] == temp[t][1]) {
+                    temp = this.sequenz.clone();
                     return false;
                 }
             }
@@ -26,6 +35,7 @@ public class Sequenz implements SequenzIF {
                 }
             }
         }
+
         return true;
     }
 
